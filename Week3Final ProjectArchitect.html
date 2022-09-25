@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>document</title>
+    <style>
+      
+      h1, h2 {
+        text-align: center;
+      }
+      h2 {
+       
+        color: #7390B2;
+        border: 1px solid #57827b;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 4px;
+      }
+      
+
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 4px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 12px;
+        margin: 20 0 10px;
+      }
+      
+      li {
+           padding: 0;
+       
+        transition: all 200ms ease-in-out;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      li:hover {
+        background: #F9EBC8;
+        
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #dae5d0;
+        color: black;
+        font-size: 25px;
+        padding: 15px 20px;
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #57827b;
+        color: white;
+        cursor: pointer;
+      }
+      .text-lower {
+    
+        font-size: 20px;}
+      .text-higher,
+      .text-lower {
+        text-align: center;
+        margin: 0;
+        text-align: center;
+        color: #57827b;
+        font-size: 30px;
+        
+        
+      }
+      .learn-more {
+        font-weight: bold;
+        font-size: 15px;
+        color: #57827b;
+        text-decoration: none;
+      }
+      .learn-more.hover {
+        text-decoration: underline;
+      }
+      
+      .contacts {
+        line-height: 1.5;
+        font-size: 12px;
+        margin: 20 0 10px;
+      }
+      .container {
+      
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background:linear-gradient(#F9EBC8, #FEFBE7);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     
+      
+        <div class="text-lower"> 🖐️ Hi, I am Valentina Kutsenko </div>
+        
+        <div class="text-higher"> Architect 🇺🇦 based in Kyiv, Ukraine</div> 
+       
+        <hr />
+
+         <h1>
+        Design a 🏡 project
+      </h1>
+      
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/049/original/How-to-Read-Floor-Plans.jpg?1655104454"
+        alt="Svitlo & Stelia"
+      />
+      <h3>
+        As your architect, I'm going to :
+        </h3>
+        <p>
+        <ul>
+            <li>give shape to your vision through drawings,
+        provide a preliminary evaluation of the program schedule</li>
+        <li>construction budget developed in the pre-design phase,  
+        prepare schematic design drawings illustrating the project to review </li>
+        <li>develop the construction project of the house</li>
+      
+        </ul>
+        </p>
+        
+      <button>Start planning</button>
+
+      <h4> cell: +38 (095) 662-14-29 <br/> email: valentinakucenko321@gmail.com</h4>
+      <a
+        href="https://www.rabotniki.ua/142950"
+        target="_blank"
+        class="learn-more"
+      >
+        More projects on Rabotniki
+      </a>
+      <p class="footer">
+        This page was build by
+        <a href="https://www.instagram.com/havliukolena/?igshid=YmMyMTA2M2Y=" target="_blank"> Olena Havliuk </a>
+      </p>
+    </div>
+    <script>
+      function plan() {
+        let name = prompt("What is your name?");
+        let email = prompt ("What is your email")
+        let phone = prompt("What is your cell phone number?");
+        if (email.length > 0 || phone.length>0) {
+            alert("Thank you, " + name + ", I'll contact you asap! Meanwhile your dream of 🏠 comes true 🪄");
+      }
+        else {
+            alert("Feel free to reach me out. I’ll be more than happy to help!");
+
+        }
+    }
+      
+      
+       let buyButton = document.querySelector("button");
+       buyButton.addEventListener("click", plan);
+    </script>
+  </body>
+</html>
